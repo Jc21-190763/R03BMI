@@ -13,12 +13,16 @@ namespace R03BMI
         public MainPage()
         {
             InitializeComponent();
-            creater.Text = "JK3A00 吉澤　毅";
+            creater.Text = "JK3A17 齊藤優太";
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            double weight, height, BMI;
+            weight = double.Parse(heighit.Text);
+            height = double.Parse(weighit.Text);
+            BMI = (weight / (height * height));
+            result.Text = BMI + "("; 
         }
     }
 }
