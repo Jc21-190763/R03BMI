@@ -33,10 +33,6 @@ namespace R03BMI
             {
                 weight = double.Parse(weighit.Text);
             }
-            if(height == 0 || weight == 0)
-            {
-                result.Text = "BMIを計算できませんでした。適切な値を入力してください。";
-            }
 
             BMI = Math.Round(weight / (height * height), 1);
 
